@@ -25,7 +25,11 @@ if answer == 'Start' or 'start' :
   if answer == 'Go to the man' or 'Walk to the man' :
   print "You walk up to the man; frankly annnoyed with him, 'Apoligizes sir, but I believe you've had enough.'"
   
-  
+  #So I found the issue we were having
+  #As it turns out, you do in fact have to state the variable with each or statement being used
+  #For example, take if answer == 'Start' or 'start' on line 10
+  #this has to be added to make the program consider BOTH options
+  #if answer == 'Start' or answer == 'start' :
   
   
 
