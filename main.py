@@ -40,7 +40,7 @@ def firstresponse():
 def narrative2():
   answer=raw_input()
   if answer == 'C' or answer == 'c' or answer == 'Continue' or answer == 'continue':
-    print """Soon after he stepped out of the building, you heard a loud thud and some dust kicked in through the door."""
+    print """Soon after he stepped out of the building, you heard a loud thud and some dust kicked in through the door. (type 'c' to continue)"""
   decision2()
 
 def walktonoise():
@@ -74,7 +74,22 @@ def narrative4():
 def decision3():
   answer=raw_input()
   if answer == "Avoid the gang" or answer == 'avoid the gang' or answer == 'Avoid' or answer == 'avoid' or answer == 'Ignore' or answer == 'ignore' or answer == 'Ignore the gang' or answer == 'ignore the gang':
-    print """You listen to Congaher's advice and chose to avoid the gang, before you left Congaher said he wants the two of two to talk a little bit more tommorrow."""  
+    print """You listen to Congaher's advice and chose to avoid the gang, before you left Congaher said he wants the two of them to talk a little bit more tommorrow.(type 'c' to continue the story)"""  
+    
+  elif answer == 'Confront the gang' or answer == 'confront the gang' or answer == 'fight the gang' or answer == 'Fight the gang' or answer == 'fight' or answer == 'Fight':
+    print """You got Congaher to his home and you build up the courage to confront the gang. Walking over there, Congaher commands you stop and come back, but you ignore and continue on. As you come up to the group of men, you spot a dead man sprawled on the ground with the red hole in the center of his back. 'Hey you reckon your little gang should step off this place, you have no right to oppress others.' you exclaim puffing up your chest. The man in the middle wearing a black hat chuckled and responded, 'I don't think so kid, you try to tell me off, thats a real consequnce.' The man then lifted up his revolver and shot you straight in the chest, you fell on the ground clenching your chest, soon your vision became fuzzy and black outright, you unfornutely have died. THIS IS THE END OF THE STORY"""
+    
+    
+def narrative4():
+  answer=raw_input()
+  if answer == 'Continue' or answer == 'continue' or answer == 'C' or answer == 'c':
+  print """In the next morning, you found Congaher walking into the saloon. He came up to you and sat down, he started off by saying,'Listen kid, that fool Cain McDonald has been tormenting Copper Falls for years and it does seem to be stopping. It's risky right now, but we can get the right equipment and weapons, find another person to help, and have a plan, I believe we can do it.''Why'd you go to me first?'  you asked concerned. 'You seem like a tough guy and I need as much help as I can get, again I know it's risky but if it's done, a whole lotta help will come the the town and you can get a good amount of pay on his head. So what says you, you willing to join me?'"""
+ 
+    
+def decision4():
+  answer=raw_input()
+  if answer == 'Join' or answer == 'join' or answer == 'Join Conagher' or answer == 'join Conagher' or answer == 'join conagher'
+  print 
     
   
   
