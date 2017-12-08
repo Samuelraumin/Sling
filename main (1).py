@@ -83,31 +83,38 @@ def decision3():
 def narrative4():
   answer=raw_input()
   if answer == 'Continue' or answer == 'continue' or answer == 'C' or answer == 'c':
-  print """In the next morning, you found Congaher walking into the saloon. He came up to you and sat down, he started off by saying,'Listen kid, that fool Cain McDonald has been tormenting Copper Falls for years and it does seem to be stopping. It's risky right now, but we can get the right equipment, weapons and have a plan, I believe we can do it.''Why'd you go to me first?'  you asked concerned. 'You seem like a tough guy and I need as much help as I can get, again I know it's risky but if it's done, a whole lotta help will come the the town and you can get a good amount of pay on his head. So what says you, you willing to join me?'"""
+   print """In the next morning, you found Congaher walking into the saloon. He came up to you and sat down, he started off by saying,'Listen kid, that fool Cain McDonald has been tormenting Copper Falls for years and it does seem to be stopping. It's risky right now, but we can get the right equipment, weapons and have a plan, I believe we can do it.''Why'd you go to me first?'  you asked concerned. 'You seem like a tough guy and I need as much help as I can get, again I know it's risky but if it's done, a whole lotta help will come the the town and you can get a good amount of pay on his head. So what says you, you willing to join me?'"""
  
     
 def decision4():
   answer=raw_input()
   if answer == 'Join' or answer == 'join' or answer == 'Join Conagher' or answer == 'join Conagher' or answer == 'join conagher':
-  print """You thought to yourself about the offer and the risk it entails, but you understand the cause and you wnat good to be in the town, "Yeah, I'll help you, let's get some guns and get ready." you say confidently. Soon after, you close up the bar and go with Conagher to collect some weapons. (type 'c' to continue)"""
+   print """You thought to yourself about the offer and the risk it entails, but you understand the cause and you wnat good to be in the town, "Yeah, I'll help you, let's get some guns and get ready." you say confidently. Soon after, you close up the bar and go with Conagher to collect some weapons. (type 'c' to continue)"""
   
   elif answer == 'Refuse' or answer == 'refuse' or answer == 'Refuse Conagher' or answer == 'refuse conagher':
     print """You decide to decline Conagher's request, hearing this Conagher left the bar without a word and you continued with your day. (type 'c' to continue)"""
     
 def narrative5():
   answer=raw_input()
-  if answer == 'C' or answer == 'c' or answer == 'Continue' or answer 'continue':
+  if answer == 'C' or answer == 'c' or answer == 'Continue' or answer == 'continue':
     print """In the afternoon, you closed up the saloon and started to head home. By the time you got to the front of the farm, you saw to your left Conagher running to you. He got to you panting, he began by apoligizing for the intense request, but then begged you to help him take care of McDonald and his gang. He again asked if you can help him kill McDonald and his gang."""
+  decisiion5()  
 
 def decision5():
   answer=raw_input()
-    if answer == 'Join' or answer == 'join' or answer == 'Join Conagher' or answer == 'join Conagher' or answer == 'join conagher':
-      print """You began to think to yourself about the decision, you first think about the risk it would take and how it will affect others, but you also think about the peace that taking care of the gang will bring. You made up your mind, "I'll help you Conagher, let's show them." you say confidently. Congaher thanked you and the two of you went off to get ready for the next morning."""
+  if answer == 'Join' or answer == 'join' or answer == 'Join Conagher' or answer == 'join Conagher' or answer == 'join conagher':
+      print """You began to think to yourself about the decision, you first think about the risk it would take and how it will affect others, but you also think about the peace that taking care of the gang will bring. You made up your mind, "I'll help you Conagher, let's show them." you say confidently. Congaher thanked you and the two of you went off to get ready for the next morning. (type 'c' to continue)"""
       
     elif answer == 'Refuse' or answer == 'refuse' or answer == 'Refuse Conagher' or answer == 'refuse conagher':
-      print """You plainly told Conagher that you don't want to help him. Strucken, Conagher left broken yet again, he turned around and went off. You stood in the same spot watching as he walks off with pity. Once you couldn't see him, you decided to go to your house and continue with your life. THIS IS THE END OF THE STORY
+      print """You plainly told Conagher that you don't want to help him. Strucken, Conagher left broken yet again, he turned around and went off. You stood in the same spot watching as he walks off with pity. Once you couldn't see him, you decided to go to your house and continue with your life. THIS IS THE END OF THE STORY"""
+      
+
+def narrative6():
+  answer=raw_input()
+  if answer == 'C' or answer == 'c' or answer == 'Continue' or answer 'continue':
+    print """When the morning came, Conagher and you set off to Copper Falls. In reaching Copper Falls, Conagher lead you to his home to collect some weapons, a rifle and a revolver. After procuring your weapons, Conagher came up to you and asked, "How do you want to do this? You want to sneak up on Coangher or do you want to face him head on?""""
     
-  
+#Soon after a dice roll prompt would come up and give you your number on a 1-10 chance. If you get a 5, you will be able to hit one man; if less, you would miss. If you got between a 8 to 10 you would take out all three men
   
   
 
