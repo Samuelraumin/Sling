@@ -1,3 +1,4 @@
+
 #Welcome to Sling v1.02
 #Interactive Fiction
 #Created by Sam Raumin and Cody Schieferstine
@@ -96,10 +97,10 @@ THIS IS THE TRUE ENDING.
 """
 takeconhome = """
 You went to the man and decide to help him home. Tapping on him, you tell him, "Hey sir, tell me where you live. I will take you home."
-The man compiles with little arguement. You beginning your journey to take the man home. On your way home, the man introduces himself as Bill Conagher. Conagher continues telling you about him being a a Mexican-American war veteran living in the heart of Copper Falls, Texas. In the town, a gang known only as the Copper Fall Riders , which has been causing trouble in the town for as long as Conagher can rememeber. You recognize the name, being the group that has been causing troubles that people in the bar have been taking about for ages. So many people have been ripped off by this gang, and they needed to be stopped. (Type c to continue)
+The man compiles with little arguement. You beginning your journey to take the man home. On your way home, the man introduces himself as Bill Conagher. Conagher continues telling you about him being a a Mexican-American war veteran living in the heart of Copper Falls, Texas. In the town, a gang known only as the Copper Fall Riders, which has been causing trouble in the town for as long as Conagher can rememeber. You recognize the name, being the group that has been causing troubles that people in the bar have been taking about for ages. So many people have been ripped off by this gang, and they needed to be stopped. (Type c to continue)
 """
 firstmeetup = """
-On your way into the town of Copper Falls, you follow the instructions that Conagher gives to his house. As you go, a loud gunshot is heard just across to the next street. Conagher, who was asleep at the time, was awoken by this, and starts yelling, "YOU DIRTY THEIVES. Someone ought to show you some good old butt kicking." You quickly muffle Conagher responses with a blanket you had in the cart and you continue on the house. When you get there, you drop off the still drunk Conagher an leave. On your way back, you notice that a set of three men take the purse of a young women outside of the bank. Do you want to intervene? (Yes or no)
+On your way into the town of Copper Falls, you follow the instructions that Conagher gives to his house. As you go, a loud gunshot is heard just across to the next street. Conagher, who was asleep at the time, was awoken by this, and starts yelling, "YOU DIRTY THEIVES. Someone ought to show you some good old butt kicking." You quickly muffle Conagher responses with a blanket you had in the cart and you continue on the house. When you get there, you drop off the still drunk Conagher an leave. On your way back, you notice that a set of three men take the purse of a young women outside of the bank. Do you want to intervene? (yes or no)
 """
 
 intervene = """
@@ -134,13 +135,13 @@ You get to the rooftop and set down the blanket full of equipment. You open the 
 """
 
 death = """
- ____  ____                 ______     _               __ 
-|_  _||_  _|               |_   _ `.  (_)             |  ]
-  \ \  / / .--.   __   _     | | `. \ __  .---.   .--.| | 
-   \ \/ // .'`\ \[  | | |    | |  | |[  |/ /__\\/ /'`\' | 
-   _|  |_| \__. | | \_/ |,  _| |_.' / | || \__.,| \__/  | 
-  |______|'.__.'  '.__.'_/ |______.' [___]'.__.' '.__.;__]
-                                                          
+
+ __  __     ______     __  __        _____     __     ______     _____    
+/\ \_\ \   /\  __ \   /\ \/\ \      /\  __-.  /\ \   /\  ___\   /\  __-.  
+\ \____ \  \ \ \/\ \  \ \ \_\ \     \ \ \/\ \ \ \ \  \ \  __\   \ \ \/\ \ 
+ \/\_____\  \ \_____\  \ \_____\     \ \____-  \ \_\  \ \_____\  \ \____- 
+  \/_____/   \/_____/   \/_____/      \/____/   \/_/   \/_____/   \/____/ 
+                                                                          
 
 """
 deathbygang = """
@@ -160,7 +161,7 @@ Nice shot, they didn't hear you. You proceed to the next person.
 """
 
 chooseformcdon = """
-You have the choice to take you chances and kill McDonald, or you can let him live. 
+You have the choice to take you chances and kill McDonald, or you can let him live. (s to shoot and l to live)
 """
 
 letmcdonlive = """
@@ -172,14 +173,13 @@ Thinking hard, you realize what Conagher said before, that killing McDonald will
 """
 
 theend = """
- ______  __                                     __     
-/\__  _\/\ \                                   /\ \    
-\/_/\ \/\ \ \___      __          __    ___    \_\ \   
-   \ \ \ \ \  _ `\  /'__`\      /'__`\/' _ `\  /'_` \  
-    \ \ \ \ \ \ \ \/\  __/     /\  __//\ \/\ \/\ \L\ \ 
-     \ \_\ \ \_\ \_\ \____\    \ \____\ \_\ \_\ \___,_\
-      \/_/  \/_/\/_/\/____/     \/____/\/_/\/_/\/__,_ /
-                                                       
+
+ ______   __  __     ______        ______     __   __     _____    
+/\__  _\ /\ \_\ \   /\  ___\      /\  ___\   /\ "-.\ \   /\  __-.  
+\/_/\ \/ \ \  __ \  \ \  __\      \ \  __\   \ \ \-.  \  \ \ \/\ \ 
+   \ \_\  \ \_\ \_\  \ \_____\     \ \_____\  \ \_\\"\_\  \ \____- 
+    \/_/   \/_/\/_/   \/_____/      \/_____/   \/_/ \/_/   \/____/ 
+                                                                   
 """
 
 #Basic Functions List Start
@@ -337,10 +337,10 @@ def dec4():
 def dec5():
   print chooseformcdon
   finalans = raw_input()
-  if finalans == 'yes' or finalans == 'Yes' or finalans == 'y' or finalans == 'Y':
+  if finalans == 'live' or finalans == 'l' or finalans == 'L' or finalans == 'Live':
     print letmcdonlive
     print theend
-  elif finalans == 'No' or finalans == 'no' or finalans == 'N' or finalans == 'n':
+  elif finalans == 'shoot' or finalans == 'Shoot' or finalans == 's' or finalans == 'S':
     dicerolefinal()
 #Game Functions End
 
@@ -380,12 +380,12 @@ def dicerolegang2notheard():
 
 def dicerolegang2heard():
   import random
-  hitguy2 = random.randint(1,10)
-  print "You rolled a " + str(hitguy2)
-  if hitguy2 <= 6:
+  hitguy3 = random.randint(1,10)
+  print "You rolled a " + str(hitguy3)
+  if hitguy3 <= 6:
     print death
     print deathbygang
-  elif hitguy2 >= 7:
+  elif hitguy3 >= 7:
     print shotbutheard
     dec5()
 
